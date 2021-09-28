@@ -18,10 +18,11 @@ public class WindowMaster {
         //declair variables for heigh and width
         float height;
         float width;
-        
+        float numOfWindows;
         // declare Strings variables to hold the user's height and width input.
         String stringHeight;
         String stringWidth;
+        String stringnumOfWindows;
         
         //declare other variables.
         float areaOfWindow;
@@ -38,6 +39,8 @@ public class WindowMaster {
         stringHeight = myScanner.nextLine();
         System.out.println("Please enter window width: ");
         stringWidth = myScanner.nextLine();
+        System.out.println("Please enter number of windows : ");
+        stringnumOfWindows = myScanner.nextLine();
         
         /** Step Three Convert the Strings.
          The next step is to convert the strings to numbers, using parse.
@@ -47,7 +50,7 @@ public class WindowMaster {
         
         height = Float.parseFloat(stringHeight);
         width = Float.parseFloat(stringWidth);
-        
+        numOfWindows =Float.parseFloat(stringnumOfWindows);
         /** Step Fourth Calculate the Area and Perimeter 
         * Add expressions to calculate the window area and trim to your code:
          */
@@ -65,7 +68,7 @@ public class WindowMaster {
         
         // calculate the total cost - use a hard-coded value
     // for material cost
-        cost = ((3.50f * areaOfWindow) + (2.25f * perimeterOfWindow));
+        cost = 6* ((3.50f * areaOfWindow) + (2.25f * perimeterOfWindow));
       
         /** Step Sixth Display the Results
          * Finally, we use System.out.println() to display the results to the user: 
@@ -74,6 +77,7 @@ public class WindowMaster {
         // display the results to the user
         System.out.println("Window Height = " + stringHeight);
         System.out.println("Window Width = " + stringWidth);
+        System.out.println("Number of Windows = " + stringnumOfWindows);
         System.out.println("Windows Area = " + areaOfWindow);
         System.out.println("Window perimeter = " + perimeterOfWindow);
         System.out.println("Total const = " +cost);
