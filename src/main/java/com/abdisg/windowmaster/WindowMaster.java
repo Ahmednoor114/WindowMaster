@@ -78,7 +78,9 @@ public class WindowMaster {
         System.out.println("Window perimeter = " + perimeterOfWindow);
         System.out.println("Total const = " +cost);
         
-       // Step Seventh Run 
+       /** Step Seventh Run When you run the program, you should see something like the following, using 10 and 15 as the input values.
+        
+        */
     }   
     
     
